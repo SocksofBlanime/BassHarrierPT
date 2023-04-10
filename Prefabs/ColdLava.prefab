@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5459518805513288365
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4670771643925795405, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0a7b902ac4a7aa24995d3e7e38ae4aaf, type: 2}
+    - target: {fileID: 5488399668615002124, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 101.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488399668615002124, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4116
+      objectReference: {fileID: 0}
+    - target: {fileID: 5488399668615002124, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -10.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8291338389259975123, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_Name
+      value: SpecialHalfpipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -66.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8672544171058668393, guid: 7a9b156bb519305429e1fe56cb05558b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a9b156bb519305429e1fe56cb05558b, type: 3}
+--- !u!1 &4095138996551238526 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8291338389259975123, guid: 7a9b156bb519305429e1fe56cb05558b,
+    type: 3}
+  m_PrefabInstance: {fileID: 5459518805513288365}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2014978556
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4095138996551238526}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
