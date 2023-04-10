@@ -8,16 +8,26 @@ public class ObstacleCollision : MonoBehaviour
     public GameObject mainCam;
     public GameObject gameOverScreen;
     public AudioSource theMusic;
-   
+    private ScoreManager theScoreManager;
+
 
     public void OnTriggerEnter(Collider other)
-    {
-        this.gameObject.GetComponent<BoxCollider>().enabled = false;
-        thePlayer.gameObject.GetComponent<PlayerMove>().enabled = false;
-        mainCam.GetComponent<Animator>().enabled = true;
-        gameOverScreen.SetActive(true);
-        theMusic.Pause();
-    }
 
-    
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+            this.gameObject.GetComponent<BoxCollider>().enabled = false;
+            thePlayer.gameObject.GetComponent<PlayerMove>().enabled = false;
+            mainCam.GetComponent<Animator>().enabled = true;
+            gameOverScreen.SetActive(true);
+            theMusic.Pause();
+        }
+
+        if (other.gameObject.CompareTag("Backwall"))
+        {
+            Destroy(this.gameObject);
+        }
+    }
 }
+

@@ -9,6 +9,8 @@ public class LevelDistance : MonoBehaviour
     public int disRun;
     public bool addingDis = false;
     public float disDelay = 0.35f;
+    public AudioSource theMusic;
+    public GameObject thePlayer;
 
     
     void Update()
@@ -26,4 +28,6 @@ public class LevelDistance : MonoBehaviour
         yield return new WaitForSeconds(disDelay);
         addingDis = false;
     }
+
+    
 }

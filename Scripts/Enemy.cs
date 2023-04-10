@@ -28,11 +28,7 @@ public class Enemy : MonoBehaviour
             GameManager.instance.EnemyHit();
             
        }
-        
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
+       
         if (other.gameObject.CompareTag("Backwall"))
         {
             Destroy(this.gameObject);

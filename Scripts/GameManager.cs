@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject resultsScreen;
     public Text  finalScoreText;
+    private ScoreManager thescoreManager;
     
 
     // Start is called before the first frame update
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = "Score: 0";
         currentMultiplier = 1;
 
+        thescoreManager = FindObjectOfType<ScoreManager>();
     }
 
     // Update is called once per frame
@@ -59,6 +61,7 @@ public class GameManager : MonoBehaviour
            {
                 resultsScreen.SetActive(true);
                 thePlayer.gameObject.GetComponent<PlayerMove>().enabled = false;
+                thescoreManager.scoreIncreasing = false;
             }
                
             
@@ -66,9 +69,10 @@ public class GameManager : MonoBehaviour
         
        
     }
-   
 
-   void FixedUpdate()
+  
+
+    void FixedUpdate()
     {
         totalEnemies = FindObjectsOfType<Enemy>().Length;
         finalScoreText.text = currentScore.ToString();

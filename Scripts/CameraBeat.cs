@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GrowRetry : MonoBehaviour
+public class CameraBeat : MonoBehaviour
 {
     [Header("Behaviour Settings")]
     public Transform _target;
-    private float _currentSize;
-    public float _growSize, _shrinkSize;
+    private float _currentPosition;
+    public float _leftPosition, _rightPosition;
     [Range(0.8f, 0.99f)]
     public float _shrinkFactor;
     [Header("Beat Settings")]
@@ -24,27 +24,27 @@ public class GrowRetry : MonoBehaviour
         {
             _target = this.transform;
         }
-        _currentSize = _shrinkSize;
+        _currentPosition = _rightPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (_currentSize > _shrinkSize)
+        if (_currentPosition > _rightPosition)
         {
-            _currentSize *= _shrinkFactor;
+            _currentPosition *= _shrinkFactor;
         }
         else
         {
-            _currentSize = _shrinkSize;
+            _currentPosition = _rightPosition;
         }
         CheckBeat();
-        _target.localScale = new Vector3(_target.localScale.x, _currentSize, _target.localScale.z);
+        _target.localPosition = new Vector3(_currentPosition, _target.localPosition.y, _target.localPosition.z);
     }
 
     void Grow()
     {
-        _currentSize = _growSize;
+        _currentPosition = _leftPosition;
     }
 
     void CheckBeat()
